@@ -39,6 +39,7 @@ class _MovieListState extends State<MovieList> {
             width: MediaQuery.of(context).size.width,
             height: 245,
             child: ListView.builder(
+              shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemCount: widget.movieList.length,
               itemBuilder: (BuildContext context, int index) {
